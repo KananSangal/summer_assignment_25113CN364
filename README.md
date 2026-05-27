@@ -16,6 +16,6 @@ To compile and execute any C file in this repository locally, open your terminal
 | Day | Challenge Details | Solved Folder | Key Engineering Concepts Covered | Target Companies |
 | :--- | :--- | :--- | :--- | :--- |
 | [**Day 1**](./Day_1/) | • **Q1:** Calculate Sum of First N Natural Numbers<br>• **Q2:** Print Multiplication Table of a Number<br>• **Q3:** Find Factorial of a Number<br>• **Q4:** Count Digits in a Number | [📁 Day_1](./Day_1/) | Input validation validation, tracking buffers, avoiding loop mutations, managing integer bounds | TCS, Infosys, Wipro |
-| **Day 2** | *Coming tomorrow...* | — | — | — |
+| **Day 2** | *Coming soon...* | — | — | — |
 
 ---
