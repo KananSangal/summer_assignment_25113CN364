@@ -1,7 +1,4 @@
-# Kanan Sangal - GL Bajaj Summer Assignments!
-# Here you go!
-
-# 🚀 Summer Coding Assignment 2026
+# 🚀 Kanan Sangal - GL Bajaj Summer Assignments 2026, 25113CN364.
 
 A comprehensive repository tracking my daily progress through foundational programming logic, algorithmic problem-solving, and core software engineering concepts during the undergraduate summer term.
 
