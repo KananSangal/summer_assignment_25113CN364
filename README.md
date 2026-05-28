@@ -16,6 +16,7 @@ To compile and execute any C file in this repository locally, open your terminal
 | Day | Challenge Details | Solved Folder | Key Engineering Concepts Covered | Target Companies |
 | :--- | :--- | :--- | :--- | :--- |
 | [**Day 1**](./Day_1/) | • **Q1:** Calculate Sum of First N Natural Numbers<br>• **Q2:** Print Multiplication Table of a Number<br>• **Q3:** Find Factorial of a Number<br>• **Q4:** Count Digits in a Number | [📁 Day_1](./Day_1/) | Input validation validation, tracking buffers, avoiding loop mutations, managing integer bounds | TCS, Infosys, Wipro |
-| **Day 2** | *Coming soon...* | — | — | — |
+| [**Day 2**](./Day_2/) | • **Q5:** Find Sum of Digits of a Number<br>• **Q6:** Reverse a Number<br>• **Q7:** Find Product of All Digits<br>• **Q8:** Check if a Number is a Palindrome | [📁 Day_2](./Day_2/) | Digit extraction using Modulo (`% 10`) and Integer Division (`/ 10`), Numeric Reconstruction, Value Preservation | TCS, Infosys, Wipro |
+| **Day 3** | *Coming soon...* | — | — | — |
 
 ---
