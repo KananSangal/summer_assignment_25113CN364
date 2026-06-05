@@ -19,7 +19,8 @@ To compile and execute any C file in this repository locally, open your terminal
 | [**Day 2**](./Day_2/) | • **Q5:** Find Sum of Digits of a Number<br>• **Q6:** Reverse a Number<br>• **Q7:** Find Product of All Digits<br>• **Q8:** Check if a Number is a Palindrome | [📁 Day_2](./Day_2/) | Digit extraction using Modulo (`% 10`) and Integer Division (`/ 10`), Numeric Reconstruction, Value Preservation | TCS, Infosys, Wipro |
 | [**Day 3**](./Day_3/) | • **Q9:** Check Whether a Number is Prime<br>• **Q10:** Print Prime Numbers in a Range<br>• **Q11:** Find GCD of Two Numbers<br>• **Q12:** Find LCM of Two Numbers | [📁 Day_3](./Day_3/) | Loop state tracking, single-line empty loops, Euclidean Algorithm properties, linear step-wise search optimization | TCS, Infosys, Wipro |
 | [**Day 4**](./Day_4/) | • **Q13:** Generate Fibonacci Series<br>• **Q14:** Find $n$th Fibonacci Term<br>• **Q15:** Check Armstrong Number<br>• **Q16:** Armstrong Numbers in Range | [📁 Day_4](./Day_4/) | Python Floating-Point Division Trap (`/` vs `//`), Parallel Tuple Swapping, Multi-pass State Extraction, Range-bound Loops | TCS, Infosys, Wipro |
-| **Day 5** | *Coming soon...* | — | — | — |
+| [**Day 5**](./Day_5/) | • **Q17:** Perfect Number Check<br>• **Q18:** Strong Number Check<br>• **Q19:** Print Factors<br>• **Q20:** Largest Prime Factor | [📁 Day_5](./Day_5/) | Python Native `for-else` Control Structures, Reversed Step Iterations (`-1`), Dynamic List Accumulation, Strict Factorial Sweeps | TCS, Infosys, Wipro |
+| **Day 6** | *Coming soon...* | — | — | — |
 
 ---
 
@@ -87,4 +88,16 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 #### 📋 Challenge Matrix Implementations:
 * **Q13 & Q14 (Fibonacci Progressions):** Seed base state values (`a, b = 0, 1`), scaling sequences seamlessly using inline tracking tuples inside a strict `range()` configuration.
 * **Q15 & Q16 (Armstrong Core Validation):** Run structural double passes over input limits. The initial pass isolates spatial scale bounds via `// 10` counter states, and the second pass accumulates matching power properties (`rem ** count`) across customized linear matrices.
+---
+## 🧠 Core Logic Blueprints Mastered
+
+### 🐍 Day 5: Control Structure Interception & Factor Selection
+
+#### 1. Python Native `for-else` Engine Optimization
+* **The Behavior:** Standard search loops use flag states (`found = False`) to trace short-circuits. Python's native `for-else` block executes the `else` track **only** if the structural block completely clears without encountering a `break`.
+* **The Solution:** In Largest Prime Factor tracking (`ques_20.py`), evaluating internal structural boundaries under a strict `else` block instantly confirms prime status without using heavy tracking variables.
+
+#### 2. Negative Baseline Boundary Scaling (`range` Steps)
+* **The Behavior:** Default structural arrays move linearly upwards (`+1`). Moving backwards requires explicitly setting a negative step execution context (`range(num, 1, -1)`).
+* **The Solution:** Starting from the absolute ceiling down to the floor allows us to pull out the maximum valid prime subset instantly on the first validation step.
 ---
