@@ -18,7 +18,8 @@ To compile and execute any C file in this repository locally, open your terminal
 | [**Day 1**](./Day_1/) | • **Q1:** Calculate Sum of First N Natural Numbers<br>• **Q2:** Print Multiplication Table of a Number<br>• **Q3:** Find Factorial of a Number<br>• **Q4:** Count Digits in a Number | [📁 Day_1](./Day_1/) | Input validation validation, tracking buffers, avoiding loop mutations, managing integer bounds | TCS, Infosys, Wipro |
 | [**Day 2**](./Day_2/) | • **Q5:** Find Sum of Digits of a Number<br>• **Q6:** Reverse a Number<br>• **Q7:** Find Product of All Digits<br>• **Q8:** Check if a Number is a Palindrome | [📁 Day_2](./Day_2/) | Digit extraction using Modulo (`% 10`) and Integer Division (`/ 10`), Numeric Reconstruction, Value Preservation | TCS, Infosys, Wipro |
 | [**Day 3**](./Day_3/) | • **Q9:** Check Whether a Number is Prime<br>• **Q10:** Print Prime Numbers in a Range<br>• **Q11:** Find GCD of Two Numbers<br>• **Q12:** Find LCM of Two Numbers | [📁 Day_3](./Day_3/) | Loop state tracking, single-line empty loops, Euclidean Algorithm properties, linear step-wise search optimization | TCS, Infosys, Wipro |
-| **Day 4** | *Coming soon...* | — | — | — |
+| [**Day 4**](./Day_4/) | • **Q13:** Generate Fibonacci Series<br>• **Q14:** Find $n$th Fibonacci Term<br>• **Q15:** Check Armstrong Number<br>• **Q16:** Armstrong Numbers in Range | [📁 Day_4](./Day_4/) | Python Floating-Point Division Trap (`/` vs `//`), Parallel Tuple Swapping, Multi-pass State Extraction, Range-bound Loops | TCS, Infosys, Wipro |
+| **Day 5** | *Coming soon...* | — | — | — |
 
 ---
 
@@ -71,4 +72,19 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 * **Q11 (GCD Engine):** Execute successive remainder reductions swapping current parameters (`rem = a % b; a = b; b = rem;`) dynamically until the evaluation floor reaches `0`.
 * **Q12 (Formula-Free LCM Search):** Establish the maximum number as a core scale variable (`max`), implementing a step-wise search scaling sequentially in factor increments (`lcm += max`) until a mutual division verification step satisfies both constraints.
 
+---
+
+### 🐍 Day 4: State Swapping & Python Numeric Architecture
+
+#### 1. Python Floor Division (`//`) vs Float Division (`/`)
+* **The Behavior:** In Python, the `/` operator defaults to float processing (e.g., `34 / 10 = 3.4`), leading to non-terminating structures in `while (num != 0)` digit-stripping blocks. 
+* **The Solution:** Enforcing integer truncation via the `//` floor operator locks down accurate right-to-left mathematical extraction.
+
+#### 2. Parallel Tuple Swapping (Deconstruction)
+* **The Behavior:** Standard environments require auxiliary variable memory (`temp = a; a = b; b = temp;`) to safely execute sequence progressions.
+* **The Solution:** Utilizing Python's inline evaluation processing (`a, b = b, a + b`) maps transformations concurrently, optimizing variable overhead.
+
+#### 📋 Challenge Matrix Implementations:
+* **Q13 & Q14 (Fibonacci Progressions):** Seed base state values (`a, b = 0, 1`), scaling sequences seamlessly using inline tracking tuples inside a strict `range()` configuration.
+* **Q15 & Q16 (Armstrong Core Validation):** Run structural double passes over input limits. The initial pass isolates spatial scale bounds via `// 10` counter states, and the second pass accumulates matching power properties (`rem ** count`) across customized linear matrices.
 ---
