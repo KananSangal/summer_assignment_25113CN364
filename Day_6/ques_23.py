@@ -1,4 +1,4 @@
-# Q21. Write a program to convert decimal to binary.
+# Q23. Write a program to count set bits in a number.
 
 num_dec = input("Enter a decimal number: ")
 if float(num_dec) == 0.0:
@@ -27,6 +27,11 @@ else:
             dec,num_frac = int(rem), rem-int(rem)
             ans_frac += int(dec)*mul
             mul *= 10
-        print(f"{ans}.{ans_frac}")
+        res=(f"{ans}.{ans_frac}")
     else:
-        print(ans)
+        res=(ans)
+
+    count = res.count("1")
+    print(f"Set bits: {count}")
+
+

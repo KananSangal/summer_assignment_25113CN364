@@ -20,7 +20,8 @@ To compile and execute any C file in this repository locally, open your terminal
 | [**Day 3**](./Day_3/) | • **Q9:** Check Whether a Number is Prime<br>• **Q10:** Print Prime Numbers in a Range<br>• **Q11:** Find GCD of Two Numbers<br>• **Q12:** Find LCM of Two Numbers | [📁 Day_3](./Day_3/) | Loop state tracking, single-line empty loops, Euclidean Algorithm properties, linear step-wise search optimization | TCS, Infosys, Wipro |
 | [**Day 4**](./Day_4/) | • **Q13:** Generate Fibonacci Series<br>• **Q14:** Find $n$th Fibonacci Term<br>• **Q15:** Check Armstrong Number<br>• **Q16:** Armstrong Numbers in Range | [📁 Day_4](./Day_4/) | Python Floating-Point Division Trap (`/` vs `//`), Parallel Tuple Swapping, Multi-pass State Extraction, Range-bound Loops | TCS, Infosys, Wipro |
 | [**Day 5**](./Day_5/) | • **Q17:** Perfect Number Check<br>• **Q18:** Strong Number Check<br>• **Q19:** Print Factors<br>• **Q20:** Largest Prime Factor | [📁 Day_5](./Day_5/) | Python Native `for-else` Control Structures, Reversed Step Iterations (`-1`), Dynamic List Accumulation, Strict Factorial Sweeps | TCS, Infosys, Wipro |
-| **Day 6** | *Coming soon...* | — | — | — |
+| [**Day 6**](./Day_6/) | • **Q21:** Decimal to Binary Fraction<br>• **Q22:** Binary to Decimal<br>• **Q23:** Count Set Bits<br>• **Q24:** Custom Power ($x^n$) | [📁 Day_6](./Day_6/) | Multi-variable assignments, Fractional string extraction, Sub-string element counters (`.count()`), Absolute negative exponent inversion | TCS, Infosys, Wipro |
+| **Day 7** | *Coming soon...* | — | — | — |
 
 ---
 
@@ -100,4 +101,19 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 #### 2. Negative Baseline Boundary Scaling (`range` Steps)
 * **The Behavior:** Default structural arrays move linearly upwards (`+1`). Moving backwards requires explicitly setting a negative step execution context (`range(num, 1, -1)`).
 * **The Solution:** Starting from the absolute ceiling down to the floor allows us to pull out the maximum valid prime subset instantly on the first validation step.
+
+---
+
+## 🧠 Core Logic Blueprints Mastered
+
+### 🐍 Day 6: Base Transformations & Algorithmic Scalability
+
+#### 1. Discrete Fraction Splitting and Continuous Matrix Multiplications
+* **The Behavior:** Float conversions create multi-digit internal representation drops. Splitting strings over exact pivots (`.split('.')`) guarantees pure string data extraction without floating-point overflow.
+* **The Solution:** Simultaneously extracting integer structures while performing fractional continuous multiplication by 2 allows highly precise float binary representation generation.
+
+#### 2. Absolute Linear Scaling for Signed Exponents
+* **The Behavior:** Standard loops break down when given negative index scales. 
+* **The Solution:** Wrapping inputs inside structural absolute boundaries (`abs(n)`) and conditionally computing the inverse (`1 / ans`) solves negative power parameters mathematically without relying on the `pow()` API.
+
 ---
