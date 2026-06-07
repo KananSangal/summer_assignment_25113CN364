@@ -6,8 +6,12 @@ A comprehensive repository tracking my daily progress through foundational progr
 
 To compile and execute any C file in this repository locally, open your terminal/command prompt inside the specific day's folder and execute the appropriate shortcut:
 
+### 💻 Python Execution (Day 4+)
+* **🍏 macOS / 🪟 Windows:** `python3 ques_25.py` ya `python ques_25.py`
+
+### 🔌 C Execution (Day 1 - Day 3)
 * **🍏 macOS:** `gcc ques_1.c -o output && ./output`
-* **🪟 Windows:** `gcc ques_1.c -o output.exe && output.exe` *(Requires **MinGW** GCC compiler toolchain installed and added to system Environment Variables).*
+* **🪟 Windows:** `gcc ques_1.c -o output.exe && output.exe`
 
 ---
 
@@ -21,7 +25,8 @@ To compile and execute any C file in this repository locally, open your terminal
 | [**Day 4**](./Day_4/) | • **Q13:** Generate Fibonacci Series<br>• **Q14:** Find $n$th Fibonacci Term<br>• **Q15:** Check Armstrong Number<br>• **Q16:** Armstrong Numbers in Range | [📁 Day_4](./Day_4/) | Python Floating-Point Division Trap (`/` vs `//`), Parallel Tuple Swapping, Multi-pass State Extraction, Range-bound Loops | TCS, Infosys, Wipro |
 | [**Day 5**](./Day_5/) | • **Q17:** Perfect Number Check<br>• **Q18:** Strong Number Check<br>• **Q19:** Print Factors<br>• **Q20:** Largest Prime Factor | [📁 Day_5](./Day_5/) | Python Native `for-else` Control Structures, Reversed Step Iterations (`-1`), Dynamic List Accumulation, Strict Factorial Sweeps | TCS, Infosys, Wipro |
 | [**Day 6**](./Day_6/) | • **Q21:** Decimal to Binary Fraction<br>• **Q22:** Binary to Decimal<br>• **Q23:** Count Set Bits<br>• **Q24:** Custom Power ($x^n$) | [📁 Day_6](./Day_6/) | Multi-variable assignments, Fractional string extraction, Sub-string element counters (`.count()`), Absolute negative exponent inversion | TCS, Infosys, Wipro |
-| **Day 7** | *Coming soon...* | — | — | — |
+| [**Day 7**](./Day_7/) | • **Q25:** Recursive Factorial<br>• **Q26:** Recursive Fibonacci Series<br>• **Q27:** Recursive Sum of Digits<br>• **Q28:** Recursive Reverse Number | [📁 Day_7](./Day_7/) | Call Stack Allocation, Functional Base Cases, Sub-problem Breakdowns, Absolute Sign Normalization (`abs()`) to avoid Infinite Stack Overflows | TCS, Infosys, Wipro |
+| **Day 8** | *Coming soon...* | — | — | — |
 
 ---
 
@@ -37,12 +42,6 @@ To compile and execute any C file in this repository locally, open your terminal
 * **The Problem:** A standard signed `int` caps at roughly **2.14 Billion** ($2,147,483,647$). Inputs exceeding this hardware memory capacity cause data overflows, forcing variables into unexpected default error values (e.g., `-1`) and corrupting loop math.
 * **The Fix:** Constrain experimental test inputs to under 2.14 Billion, or upgrade variables to a 64-bit `long long int` (using `%lld`) to expand storage capacity up to 19 digits.
 
-#### 📋 Challenge Matrix Implementations:
-* **Q1 (Sum of Natural Numbers):** Use a `for` loop running from `1` to `N`, adding the loop control variable `i` to a running `sum` tracker on every iteration.
-* **Q2 (Multiplication Table):** Run a `for` loop exactly 10 times (`1` to `10`), multiplying the user's input number by the loop index `i` inside each print statement.
-* **Q3 (Factorial of a Number):** Initialize a `fact` variable to `1`, then run a loop from `1` up to `N`, continuously multiplying `fact *= i` to accumulate the product.
-* **Q4 (Count Digits):** Use a `while (num != 0)` loop to continuously strip the rightmost digit using integer division (`num /= 10`), incrementing a `count` variable on each chop until the number hits `0`.
-
 ---
 
 ### 🔄 Day 2: The Digit Extraction Engine (`% 10` & `/ 10`)
@@ -51,12 +50,6 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 
 1. **The Digit Puller (`num % 10`):** Evaluates the division remainder to isolate the **absolute last digit** on the right. (e.g., `789 % 10` $\rightarrow$ **`9`**).
 2. **The Digit Chopper (`num / 10`):** Uses integer division truncation to slide the number right and **drop the last digit**. (e.g., `789 / 10` $\rightarrow$ **`78`**). This acts as the loop modifier until the value reaches `0`.
-
-#### 📋 Challenge Matrix Implementations:
-* **Q5 (Sum of Digits):** Isolate the last digit with `% 10`, add it to a running `sum`, and shrink the number with `/ 10`.
-* **Q7 (Product of Digits):** Isolate the last digit with `% 10`, multiply it into a running `product` (initialized to `1`), and shrink the number with `/ 10`.
-* **Q6 (Reverse a Number):** Isolate the last digit with `% 10`, shift the total left (`rev = rev * 10 + rem`) to place the digit, and shrink the number with `/ 10`.
-* **Q8 (Palindrome Check):** Backup the original value (`backup = num`), run the Q6 reversal logic, and check if the final `rev == backup`.
 
 ---
 
@@ -67,12 +60,6 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 
 #### 2. The Euclidean Property ($\text{GCD}(a, b) = \text{GCD}(b, a \pmod b)$)
 * **The Concept:** Instead of computing all matching components linearly, dividing the primary value by the subset and cascading the resulting remainder reduces numerical bounds exponentially, resolving the Greatest Common Divisor efficiently inside a simple `while (b != 0)` loop without heavy spatial arrays or structural fallback chains.
-
-#### 📋 Challenge Matrix Implementations:
-* **Q9 (Check Prime):** Evaluate a target number across an internal factor loop starting from `2` up to `num - 1`. If no composite divisors are hit, confirm primality.
-* **Q10 (Prime Range Search):** Construct a wrapped range loop executing the internal prime evaluator sequentially across a target matrix while implementing a persistent outer range counter to handle blank output defaults.
-* **Q11 (GCD Engine):** Execute successive remainder reductions swapping current parameters (`rem = a % b; a = b; b = rem;`) dynamically until the evaluation floor reaches `0`.
-* **Q12 (Formula-Free LCM Search):** Establish the maximum number as a core scale variable (`max`), implementing a step-wise search scaling sequentially in factor increments (`lcm += max`) until a mutual division verification step satisfies both constraints.
 
 ---
 
@@ -86,11 +73,7 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 * **The Behavior:** Standard environments require auxiliary variable memory (`temp = a; a = b; b = temp;`) to safely execute sequence progressions.
 * **The Solution:** Utilizing Python's inline evaluation processing (`a, b = b, a + b`) maps transformations concurrently, optimizing variable overhead.
 
-#### 📋 Challenge Matrix Implementations:
-* **Q13 & Q14 (Fibonacci Progressions):** Seed base state values (`a, b = 0, 1`), scaling sequences seamlessly using inline tracking tuples inside a strict `range()` configuration.
-* **Q15 & Q16 (Armstrong Core Validation):** Run structural double passes over input limits. The initial pass isolates spatial scale bounds via `// 10` counter states, and the second pass accumulates matching power properties (`rem ** count`) across customized linear matrices.
 ---
-## 🧠 Core Logic Blueprints Mastered
 
 ### 🐍 Day 5: Control Structure Interception & Factor Selection
 
@@ -104,8 +87,6 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 
 ---
 
-## 🧠 Core Logic Blueprints Mastered
-
 ### 🐍 Day 6: Base Transformations & Algorithmic Scalability
 
 #### 1. Discrete Fraction Splitting and Continuous Matrix Multiplications
@@ -115,5 +96,17 @@ All Day 2 challenges were executed by running a highly optimized two-step math p
 #### 2. Absolute Linear Scaling for Signed Exponents
 * **The Behavior:** Standard loops break down when given negative index scales. 
 * **The Solution:** Wrapping inputs inside structural absolute boundaries (`abs(n)`) and conditionally computing the inverse (`1 / ans`) solves negative power parameters mathematically without relying on the `pow()` API.
+
+---
+
+### 🐍 Day 7: Call Stacks & Recursive Execution Contexts
+
+#### 1. Stack Depth Preservation & Absolute Value Normalization
+* **The Behavior:** Recursive functions rely on a strict exit condition (Base Case). Negative integer parameters can bypass basic numeric floor boundaries due to language-specific floor division (`//`) rules, causing infinite recursion stack overflow crashes.
+* **The Solution:** Implementing inline value normalization via absolute magnitude extraction (`abs(num)`) isolates digit structures from signs, safeguarding the call stack depth across negative domains.
+
+#### 2. Sequential Decomposition vs. Discrete Accumulation
+* **The Behavior:** Pure mathematical recursion rolls upward to return a single evaluation matrix. Generating a full progression trace (like a Fibonacci series) using tree-structured algorithms requires decoupling generation from output presentation.
+* **The Solution:** Wrapping structural tree logic inside a decoupled step-wise iteration loop allows individual extraction of discrete positional states sequentially.
 
 ---
