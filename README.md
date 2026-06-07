@@ -26,7 +26,8 @@ To compile and execute any C file in this repository locally, open your terminal
 |  **Day 5**  | • **Q17:** Perfect Number Check<br>• **Q18:** Strong Number Check<br>• **Q19:** Print Factors<br>• **Q20:** Largest Prime Factor | [Day_5](./Day_5/) | Python Native `for-else` Control Structures, Reversed Step Iterations (`-1`), Dynamic List Accumulation, Strict Factorial Sweeps | TCS, Infosys, Wipro |
 |  **Day 6**  | • **Q21:** Decimal to Binary Fraction<br>• **Q22:** Binary to Decimal<br>• **Q23:** Count Set Bits<br>• **Q24:** Custom Power ($x^n$) | [Day_6](./Day_6/) | Multi-variable assignments, Fractional string extraction, Sub-string element counters (`.count()`), Absolute negative exponent inversion | TCS, Infosys, Wipro |
 |  **Day 7**  | • **Q25:** Recursive Factorial<br>• **Q26:** Recursive Fibonacci Series<br>• **Q27:** Recursive Sum of Digits<br>• **Q28:** Recursive Reverse Number | [Day_7](./Day_7/) | Call Stack Allocation, Functional Base Cases, Sub-problem Breakdowns, Absolute Sign Normalization (`abs()`) to avoid Infinite Stack Overflows | TCS, Infosys, Wipro |
-| **Day 8** | *Coming soon...* | — | — | — |
+| **Day 8** | • **Q29:** Half Pyramid Pattern<br>• **Q30:** Number Triangle Pattern<br>• **Q31:** Character Triangle Pattern<br>• **Q32:** Repeated-Number Pattern | [Day_8](./Day_8/) | 2-Dimensional Matrix Grids, Coordinate Index Control, Memory Multipliers (`"*" * i`), ASCII Map Casting via `chr()` | Microsoft, Adobe, Paytm |
+| **Day 9** | *Coming soon...* | — | — | — |
 
 ---
 
@@ -109,5 +110,17 @@ To compile and execute any C file in this repository locally, open your terminal
 #### 2. Sequential Decomposition vs. Discrete Accumulation
 * **The Behavior:** Pure mathematical recursion rolls upward to return a single evaluation matrix. Generating a full progression trace (like a Fibonacci series) using tree-structured algorithms requires decoupling generation from output presentation.
 * **The Solution:** Wrapping structural tree logic inside a decoupled step-wise iteration loop allows individual extraction of discrete positional states sequentially.
+
+---
+
+### 🐍 Day 8: 2D Coordinate Grids & Spatial Metric Mapping
+
+#### 1. Dual-Axis Index Interception (Nested Loops)
+* **The Behavior:** Displaying dynamic multi-line visual structures requires multi-axis processing. Running linear loops only handles single-dimension array extensions.
+* **The Solution:** Mapping an outer iterator ($i$) as the row ceiling and an inner iterator ($j$) as the column boundary transforms one-dimensional computation vectors into functional 2D spatial matrices ($x, y$), allowing accurate coordinate formatting.
+
+#### 2. Lexical Integer Casting via ASCII Maps (`chr()`)
+* **The Behavior:** Standard alphabetic loops require messy static hardcoded lookups or multi-element character lists to traverse alphabetic bounds.
+* **The Solution:** Relying on the global ASCII mapping scale (where `'A'` maps to base-10 value `65`) allows structural increments (`ascii_val += 1`) inside nested loop blocks. Transforming indices dynamically through inline lexical engine casting (`chr()`) creates systematic data grids without array dependencies.
 
 ---
