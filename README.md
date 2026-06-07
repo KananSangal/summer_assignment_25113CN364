@@ -46,10 +46,11 @@ To compile and execute any C file in this repository locally, open your terminal
 
 ### 🔄 Day 2: The Digit Extraction Engine (`% 10` & `/ 10`)
 
-All Day 2 challenges were executed by running a highly optimized two-step math pattern inside a `while (num != 0)` block to peel off and isolate integers right-to-left:
+#### 1. The Digit Puller Matrix (`num % 10`)
+* **The Concept:** Traditional right-to-left scanning requires complex shifting. By evaluating the numeric division remainder under a base-10 modulo operation, the program isolates the absolute last digit on the right instantly (e.g., `789 % 10` $\rightarrow$ **`9`**) without mutating the core tracking value.
 
-1. **The Digit Puller (`num % 10`):** Evaluates the division remainder to isolate the **absolute last digit** on the right. (e.g., `789 % 10` $\rightarrow$ **`9`**).
-2. **The Digit Chopper (`num / 10`):** Uses integer division truncation to slide the number right and **drop the last digit**. (e.g., `789 / 10` $\rightarrow$ **`78`**). This acts as the loop modifier until the value reaches `0`.
+#### 2. The Digit Chopper Truncation (`num / 10` or `num // 10`)
+* **The Concept:** Moving the pointer context across individual digit places requires dynamic array shrinking. Utilizing integer division truncation slides the entire numeric sequence to the right and drops the evaluated boundary digit (e.g., `789 / 10` $\rightarrow$ **`78`**), serving as the core loop modifier until the execution register hits `0`.
 
 ---
 
