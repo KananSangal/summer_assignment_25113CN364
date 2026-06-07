@@ -27,7 +27,8 @@ To compile and execute any C file in this repository locally, open your terminal
 |  **Day 6**  | • **Q21:** Decimal to Binary Fraction<br>• **Q22:** Binary to Decimal<br>• **Q23:** Count Set Bits<br>• **Q24:** Custom Power ($x^n$) | [Day_6](./Day_6/) | Multi-variable assignments, Fractional string extraction, Sub-string element counters (`.count()`), Absolute negative exponent inversion | TCS, Infosys, Wipro |
 |  **Day 7**  | • **Q25:** Recursive Factorial<br>• **Q26:** Recursive Fibonacci Series<br>• **Q27:** Recursive Sum of Digits<br>• **Q28:** Recursive Reverse Number | [Day_7](./Day_7/) | Call Stack Allocation, Functional Base Cases, Sub-problem Breakdowns, Absolute Sign Normalization (`abs()`) to avoid Infinite Stack Overflows | TCS, Infosys, Wipro |
 | **Day 8** | • **Q29:** Half Pyramid Pattern<br>• **Q30:** Number Triangle Pattern<br>• **Q31:** Character Triangle Pattern<br>• **Q32:** Repeated-Number Pattern | [Day_8](./Day_8/) | 2-Dimensional Matrix Grids, Coordinate Index Control, Memory Multipliers (`"*" * i`), ASCII Map Casting via `chr()` | Microsoft, Adobe, Paytm |
-| **Day 9** | *Coming soon...* | — | — | — |
+| **Day 9** | • **Q33:** Reverse Star Pattern<br>• **Q34:** Reverse Number Triangle<br>• **Q35:** Repeated Character Pattern<br>• **Q36:** Hollow Square Pattern | [Day_9](./Day_9/) | Negative Step Range Modifiers (`-1`), Coordinate Logic Interception, Symmetrical Row-Casting, Static Lexical Row Multiplying | Microsoft, Adobe, Paytm |
+| **Day 10** | *Coming soon...* | — | — | — |
 
 ---
 
@@ -122,5 +123,17 @@ To compile and execute any C file in this repository locally, open your terminal
 #### 2. Lexical Integer Casting via ASCII Maps (`chr()`)
 * **The Behavior:** Standard alphabetic loops require messy static hardcoded lookups or multi-element character lists to traverse alphabetic bounds.
 * **The Solution:** Relying on the global ASCII mapping scale (where `'A'` maps to base-10 value `65`) allows structural increments (`ascii_val += 1`) inside nested loop blocks. Transforming indices dynamically through inline lexical engine casting (`chr()`) creates systematic data grids without array dependencies.
+
+---
+
+### 🐍 Day 9: Inverted Vectors & Boundary Coordinate Isolation
+
+#### 1. Negative Direction Increment Blocks (`range(n, 0, -1)`)
+* **The Behavior:** Loops running with default directional increments fail or remain inactive if the starting bounds exceed the terminal index value ($start > stop$).
+* **The Solution:** Explicitly integrating a negative step index scaling structure (`-1`) allows programmatic loops to collapse from upper structural caps smoothly down toward zero baselines.
+
+#### 2. Condition-Based Boundary Interception (Hollow Matrices)
+* **The Behavior:** Generating hollow shapes requires elements inside specific indices to skip token production and instead output blank spaces.
+* **The Solution:** Isolating exact outer rows (`i == 0` or `i == rows - 1`) and columns (`j == 0` or `j == rows - 1`) using complex conditional blocks checks matrices dynamically, leaving inner geometric sections unmapped to simulate hollow voids.
 
 ---
